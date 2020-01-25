@@ -1,0 +1,203 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'web/vendors/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'web/vendors/css/grid.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'web/vendors/css/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'web/resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'web/resources/css/queries.css' %}">
+
+        <title>Jacuzzi Mansion</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="row">
+                <ul class="main-nav">
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <h5>Jacuzzi Mansion</h5>
+        </header>
+        <div class="section-header">
+            <div class="title-text-box">
+                <div class="logo-text">
+                    <img src="{% static 'web/resources/img/jm_logo%20clear.png' %}">
+                </div>
+                <a class="btn btn-full js--scroll-to-music" href="#">Listen Now</a>
+            </div>
+        </div>
+
+
+        <section class="section section-tour js--section-tour js--wp-1">
+            <div class="section-title" id="tour">
+                TOUR
+            </div>
+            <a href="https://www.songkick.com/artists/10109606" class="songkick-widget" data-theme="dark" data-detect-style="true" data-font-color="#FFF" data-font-family="Courier New" data-background-color="transparent" data-locale="en">Jacuzzi Mansion tour dates</a>
+            <script src="//widget.songkick.com/10109606/widget.js"></script>
+        </section>
+        <section class="section section-music js--section-music js--wp-2">
+            <div class="section-title" id="music">
+                MUSIC
+            </div>
+            <div class="row">
+                <iframe width="40%" height="10%" scrolling="no" frameborder="no" allow="autoplay-false" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/918273355&color=%23161a15&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+        </section>
+
+        <section class="section section-about js--wp-3" id="about">
+            <div class="band-photo">
+                <img src="{% static 'web/resources/img/band-1.jpg' %}">
+            </div>
+            <div class="band-text">
+                <div class="row">
+                    <div class="col span-1-of-3 box">
+                        <h3>Daniel Lane</h3>
+                    </div>
+                    <div class="col span-1-of-3 box">
+                        <h3>William Lawrence James</h3>
+                    </div>
+                    <div class="col span-1-of-3 box">
+                        <h3>Jack Bicknell</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3 box">
+                      Drums
+                    </div>
+                    <div class="col span-1-of-3 box">
+                        Guitar and vox
+                    </div>
+                    <div class="col span-1-of-3 box">
+                        Bass
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-booking  js--wp-4" id="booking">
+            <div class="section-title">
+                BOOKING
+            </div>
+            <div clas='row'>
+                <h2>This is where booking info will be.</h2>
+                <div class="plan-box">
+                    Book
+                    <p class="plan-us">Us</p>
+                    <p class="plan-us-now">Now</p>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-full">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-mailing-list">
+            <div class="section-title">
+                MAILING LIST
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" if="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertising</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked>Yes please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h2>This is where booking info will be.</h2>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">iOS</a></li>
+                        <li><a href="#">Android</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="logo-instagram" name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="logo-youtube" name="logo-youtube"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 Jacuzzi Mansion. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="{% static 'web/vendors/js/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'web/resources/js/script.js' %}"></script>
+
+    </body>
+
+</html>

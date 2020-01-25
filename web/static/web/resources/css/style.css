@@ -1,0 +1,394 @@
+/* Pink color #ed0cef */
+
+/* ------------------------------------- */
+/* FONTS SETUP */
+/* ------------------------------------- */
+
+@font-face {
+    font-family: 'Rough Rakoon';
+    src: url('/vendors/fonts/RoughRakoon/RoughRakoon_PERSONAL.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Rough Rakoon';
+    src: url('/vendors/fonts/RoughRakoon/RoughRakoonIn_PERSONAL.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rough Rakoon';    
+    src: url('/vendors/fonts/RoughRakoon/RoughRakoonOut_PERSONAL.ttf') format('truetype');
+    font-weight: 300;
+}
+
+/* ------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', 'Courier', 'monospace';
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* ------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+h2 { 
+    font-weight: 300;
+    color: #ed0cef;
+    text-align: center;
+    padding: 1% 10%
+}
+
+.section{
+  height: 100%;
+  width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 6px;
+    padding-bottom: 40px;
+}
+
+/* ---------- HEADINGS ------- */
+
+
+
+/* ---------- BUTTONS ------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 1% 5%;
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    vertical-align: middle;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]  {
+    font-size: 30px;
+    font-weight: 400;
+    background-color: #000;
+    border: 2px solid #ed0cef;
+    color: #fff;
+}
+
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #ad09ae;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #ad09ae;
+    border: 2px solid #ad09bb;
+    color: #fff;
+}
+
+
+/* ------------------------------------- */
+/* HEADER */
+/* ------------------------------------- */
+
+/* Main Nav */
+.navbar {
+    width: 100%;
+    z-index: 9999;
+    background-color: #000;
+    position: fixed;
+}
+.main-nav {
+    width: 950px;
+    max-width: 95%;
+    margin: 3% auto;    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;   
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #ad09ae;
+}
+
+
+.section-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/group2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    margin: 3.8% 10%; 
+    border: 1px solid #fff;
+    text-align: center;
+    
+}
+
+.title-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.logo-text {
+    padding-bottom: 3%;
+}
+
+/* ----------------------------------------------- */
+/* TOUR SECTION */
+/* ----------------------------------------------- */
+
+.section-tour {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;   
+    margin-bottom: 2%;
+
+}
+
+/* ----------------------------------------------- */
+/* MUSIC SECTION */
+/* ----------------------------------------------- */
+
+.section-music {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;  
+    margin-bottom: 2%;
+}
+
+/* ----------------------------------------------- */
+/* ABOUT */
+/* ----------------------------------------------- */
+.section-about {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+.band-photo img {
+    padding-top: 3%;
+    border: 1px solid #000;
+    max-width: 100%;
+    height:auto;
+}
+
+.band-text {
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 5%;
+     
+}
+
+/* ----------------------------------------------- */
+/* BOOKING */
+/* ----------------------------------------------- */
+.section-booking {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%; 
+    text-align: center;
+}
+
+.plan-box {
+    display: inline-block;
+}
+
+/* ----------------------------------------------- */
+/* MAILING LIST */
+/* ----------------------------------------------- */
+.section-mailing-list {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%; 
+    text-align: center;
+}
+
+.plan-box {
+    display: inline-block;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0px;
+}
+
+*:focus {
+    outline: none;
+}
+/* ------------------------------------- */
+/* FOOTER */
+/* ------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0px;
+    color: #888;
+    transition: color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #fff;
+}
+
+
+.logo-facebook,
+.logo-twitter,
+.logo-instagram,
+.logo-youtube {
+    transition: color 0.2s;
+}
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+
+.logo-twitter:hover {
+    color: #55acee;
+}
+
+
+.logo-instagram:hover {
+    color: #e95950;
+}
+
+
+.logo-youtube:hover {
+    color: #ff0000;
+}
+
+
+.footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------------------------------------- */
+/* ANIMATIONS */
+/* ------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+    opacity: 0;
+    animation-duration: 3s;
+}
+
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated {
+    opacity: 1;
+}
